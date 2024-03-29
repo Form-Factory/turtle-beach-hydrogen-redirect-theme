@@ -30,7 +30,7 @@
         "type": "textarea",
         "id": "subdomain_map",
         "label": "Subdomain Mapping",
-        "info": "checkout subdomain:hydrogen subdomain (eg `eu-checkout:eu`"
+        "info": "checkout subdomain:hydrogen subdomain (eg: eu-checkout>eu)"
       },
       {
         "type": "checkbox",
