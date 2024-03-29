@@ -27,6 +27,12 @@
         "info": "Shopify path > Storefront path [Learn more](https://github.com/Shopify/hydrogen-redirect-theme#custom-redirects)"
       },
       {
+        "type": "textarea",
+        "id": "subdomain_map",
+        "label": "Subdomain Mapping",
+        "info": "checkout subdomain:hydrogen subdomain (eg `eu-checkout:eu`"
+      },
+      {
         "type": "checkbox",
         "id": "integrate_with_customer_accounts",
         "label": "Integrate with customer accounts",
