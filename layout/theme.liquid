@@ -17,13 +17,7 @@
     {% endcomment %}
     {%- assign should_redirect = template != blank -%}
 
-    {%- if settings.storefront_hostname != blank and should_redirect -%}
-      <link rel="canonical" href="https://{{ settings.storefront_hostname }}{{ request.path }}">
-    {% else %}
-      <link rel="canonical" href="{{ canonical_url }}">
-    {% endif %}
-
-    {%- if settings.storefront_hostname != blank and should_redirect -%}
+    {%- if should_redirect -%}
       <script>
         function getCookie(name) {
           name = name + '=';
@@ -73,6 +67,24 @@
               console.log('new hostname',currentUrl.hostname.replace(currentSubdomain,subdomainMap.get(currentSubdomain)))
               redirectUrl.hostname = currentUrl.hostname.replace(currentSubdomain,subdomainMap.get(currentSubdomain))
             }
+          }
+          {%- if settings.integrate_with_customer_accounts and customer != null -%}
+            redirectUrl.searchParams.append('logged_in', 'true');
+
+            {%- if customer.current_location != null -%}
+              redirectUrl.searchParams.append('company_location_id', '{{ customer.current_location.id }}');
+            {%- endif -%}
+          {%- endif -%}
+
+          {% comment %}
+            Handle discount code logic (e.g. xxx.myshopify.com/discount/freeshipping?redirect=/products)
+            - Add discount code to as param to the edirect URL if the `discount_code` cookie exists
+            - Cookie is deleted after to prevent it from being automatically added to other routes
+          {% endcomment %}
+          var discountCode = getCookie('discount_code');
+          if (discountCode) {
+            redirectUrl.searchParams.append("discount", discountCode);
+            deleteCookie("discount_code");
           }
           console.log(redirectUrl)
       
