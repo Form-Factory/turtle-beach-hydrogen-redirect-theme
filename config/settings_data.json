@@ -1,7 +1,8 @@
 {
   "current": {
-    "storefront_hostname": "turtlebeachtest.com",
+    "subdomain_pairs": "eu-checkout > eu",
     "integrate_with_customer_accounts": true,
+    "storefront_hostname": "turtlebeachtest.com",
     "content_for_index": [
 
     ]
