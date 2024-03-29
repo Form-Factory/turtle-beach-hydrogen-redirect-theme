@@ -63,10 +63,14 @@
           const redirectUrl = currentUrl
           const subdomainPairStr = "{{ settings.subdomain_pairs | newline_to_br | strip_newlines | replace: ' ', '' }}";
           if (subdomainPairStr) {
+            console.log('subdomainPairStr',subdomainPairStr)
             const subdomainPairs = subdomainPairStr.split('<br/>');
             const subdomainMap = new Map(subdomainPairs.map(subdomainPair => subdomainPair.split('>')))
+            console.log('subdomainMap',subdomainMap)
             const currentSubdomain = extractSubdomain(currentUrl)
+            console.log('currentSubdomain',currentSubdomain)
             if (currentSubdomain && subdomainMap.has(currentSubdomain)) {
+              console.log('new hostname',currentUrl.hostname.replace(currentSubdomain,subdomainMap.get(currentSubdomain)))
               redirectUrl.hostname = currentUrl.hostname.replace(currentSubdomain,subdomainMap.get(currentSubdomain))
             }
           }
