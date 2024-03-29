@@ -31,6 +31,12 @@
         "id": "integrate_with_customer_accounts",
         "label": "Integrate with customer accounts",
         "info": " [Learn more](https:\/\/help.shopify.com\/en\/manual\/customers\/customer-accounts\/new-customer-accounts)"
+      },
+      {
+        "type": "checkbox",
+        "id": "debug_mode",
+        "label": "Enable Debug Mode",
+        "info": "Outputs diagnostic information to the console and does not actually redirect traffic"
       }
     ]
   }

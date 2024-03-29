@@ -56,17 +56,19 @@
           const currentUrl = new URL(window.location.href);
           const redirectUrl = currentUrl
           const subdomainPairStr = "{{ settings.subdomain_pairs | newline_to_br | strip_newlines | replace: ' ', '' }}";
+          const debugMessages = new Map();
           if (subdomainPairStr) {
-            console.log('subdomainPairStr',subdomainPairStr)
             const subdomainPairs = subdomainPairStr.split('<br/>');
             const subdomainMap = new Map(subdomainPairs.map(subdomainPair => subdomainPair.split('>')))
-            console.log('subdomainMap',subdomainMap)
+            debugMessages.set('Subdomain Map Recieved',subdomainMap)
             const currentSubdomain = extractSubdomain(currentUrl)
-            console.log('currentSubdomain',currentSubdomain)
             if (currentSubdomain && subdomainMap.has(currentSubdomain)) {
-              console.log('new hostname',currentUrl.hostname.replace(currentSubdomain,subdomainMap.get(currentSubdomain)))
-              redirectUrl.hostname = currentUrl.hostname.replace(currentSubdomain,subdomainMap.get(currentSubdomain))
+              const newHostname = currentUrl.hostname.replace(currentSubdomain,subdomainMap.get(currentSubdomain))
+              debugMessages.set('Subdomain matched, modifying hostname',newHostname)
+              redirectUrl.hostname = newHostname
             }
+          } else {
+            debugMessages.set('No subdomains set')
           }
           var customRedirectsStr = "{{ settings.custom_redirects | newline_to_br | strip_newlines | replace: ' ', '' }}";
           if (customRedirectsStr) {
@@ -78,9 +80,12 @@
               var toPath = redirect[1];
 
               if (fromPath && toPath && currentUrl.pathname === fromPath) {
+                debugMessages.set('Path matched redirect rule',redirect)
                 redirectUrl.pathname = toPath
               }
             }
+          } else {
+            debugMessages.set('No redirects set')
           }
 
           {%- if settings.integrate_with_customer_accounts and customer != null -%}
@@ -101,8 +106,13 @@
             redirectUrl.searchParams.append("discount", discountCode);
             deleteCookie("discount_code");
           }
-          console.log(redirectUrl)
-          window.location.replace(redirectUrl.href);
+          {%- if settings.debug_mode -%}
+            console.group("Hydrogen Redirect Theme Debug Info")
+            Array.from(debugMessages).forEach(debugMessage => console.log(debugMessage))
+            console.groupEnd()
+          {%- elsif -%}
+            window.location.replace(redirectUrl.href);
+          {%- endif -%}
         }
       </script>
     {%- endif -%}
