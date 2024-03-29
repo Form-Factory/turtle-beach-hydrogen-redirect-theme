@@ -1,5 +1,6 @@
 {
   "current": {
+    "custom_redirects": "path > new-path",
     "subdomain_pairs": "eu-checkout > eu",
     "integrate_with_customer_accounts": true,
     "storefront_hostname": "turtlebeachtest.com",
