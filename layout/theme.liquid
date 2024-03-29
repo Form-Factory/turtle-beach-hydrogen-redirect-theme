@@ -108,9 +108,12 @@
           }
           {%- if settings.debug_mode -%}
             console.group("Hydrogen Redirect Theme Debug Info")
-            Array.from(debugMessages).forEach(debugMessage => console.log(debugMessage))
+            Array.from(debugMessages).forEach(([messageLabel,message]) => console.log(messageLabel,message))
+            console.log('Current Url',currentUrl)
+            console.log('Redirecting To', redirectUrl)
             console.groupEnd()
           {%- else -%}
+            window.storefrontRedirectUrl = redirectUrl.href
             window.location.replace(redirectUrl.href);
           {%- endif -%}
         }
@@ -163,10 +166,14 @@
   <body>
     {%- if should_redirect -%}
       <div class="redirect">
-        {%- if settings.storefront_hostname != blank -%}
-          <h1>Redirecting...</h1>
+          {%- if settings.debug_mode -%}
+            <h1>Debug Mode Enabled</h1>
+            <p>Page will not redirect, turn off in theme settings</p>
+          {%- else  -%}
+            <h1>Redirecting...</h1>
+          {%- endif -%}
           <p>
-            <a id="redirect-link" href="https://{{ settings.storefront_hostname }}/">Click here</a>
+            <a id="redirect-link">Click here</a>
             if you are not automically redirected.
           </p>
           <script>
@@ -175,10 +182,6 @@
               redirectLink.href = window.storefrontRedirectUrl;
             }
           </script>
-        {%- else -%}
-          <h1>Redirect URL not set</h1>
-          <p>Configure the redirects in "Theme settings > Storefront".</p>
-        {%- endif -%}
       </div>
     {%- endif -%}
     {{ content_for_layout }}
