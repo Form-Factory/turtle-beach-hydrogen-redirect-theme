@@ -15,12 +15,6 @@
         "content": "Settings"
       },
       {
-        "type": "text",
-        "id": "storefront_hostname",
-        "label": "Hostname",
-        "info": "Without protocol, e.g. mydomain.com"
-      },
-      {
         "type": "textarea",
         "id": "custom_redirects",
         "label": "Custom redirects",
@@ -28,9 +22,9 @@
       },
       {
         "type": "textarea",
-        "id": "subdomain_map",
-        "label": "Subdomain Mapping",
-        "info": "checkout subdomain:hydrogen subdomain (eg: eu-checkout>eu)"
+        "id": "subdomain_pairs",
+        "label": "Checkout Subdomain Pairs",
+        "info": "checkout subdomain:hydrogen subdomain (eg: eu-checkout > eu)"
       },
       {
         "type": "checkbox",
