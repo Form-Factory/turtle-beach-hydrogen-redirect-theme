@@ -110,7 +110,7 @@
             console.group("Hydrogen Redirect Theme Debug Info")
             Array.from(debugMessages).forEach(debugMessage => console.log(debugMessage))
             console.groupEnd()
-          {%- elsif -%}
+          {%- else -%}
             window.location.replace(redirectUrl.href);
           {%- endif -%}
         }
