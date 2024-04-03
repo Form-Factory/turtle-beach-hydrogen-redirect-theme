@@ -113,8 +113,8 @@
             console.log('Redirecting To', redirectUrl)
             console.groupEnd()
           {%- else -%}
-            // window.storefrontRedirectUrl = redirectUrl.href
-            // window.location.replace(redirectUrl.href);
+            window.storefrontRedirectUrl = redirectUrl.href
+            window.location.replace(redirectUrl.href);
           {%- endif -%}
         }
       </script>
