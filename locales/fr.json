@@ -4,7 +4,7 @@
       "marketing": {
         "sms": {
           "disclaimer": {
-            "description_html": "*By signing up with  your mobile number, you consent to receive  special offers, marketing messages and shopping cart reminders from Turtle Beach at the phone number you provide. Consent is not a condition of purchase. You may reply STOP to unsubscribe at any time.\n<br \/>\nReply HELP for help. Message frequency will vary. Message & data rates may apply. See our <a href='https:\/\/ca.turtlebeachtest.com\/fr\/pages\/privacy' target=\"_blank\" style=\"color: #7538FF;\">Privacy Policy<\/a> and <a href='https:\/\/ca.turtlebeachtest.com\/fr\/pages\/terms-conditions' target=\"_blank\" style=\"color: #7538FF;\">Terms & Conditions<\/a> for more information"
+            "description_html": "*By signing up with  your mobile number, you consent to receive  special offers, marketing messages and shopping cart reminders from Turtle Beach at the phone number you provide. Consent is not a condition of purchase. You may reply STOP to unsubscribe at any time.<br \/>Reply HELP for help. Message frequency will vary. Message & data rates may apply. See our <a href='https:\/\/ca.turtlebeachtest.com\/fr\/pages\/privacy' target=\"_blank\" style=\"color: #7538FF;\">Privacy Policy<\/a> and <a href='https:\/\/ca.turtlebeachtest.com\/fr\/pages\/terms-conditions' target=\"_blank\" style=\"color: #7538FF;\">Terms & Conditions<\/a> for more information"
           }
         },
         "accept_shop_pay_marketing_checkbox_label": "Envoyez-moi des nouvelles et des offres de cette boutique",
