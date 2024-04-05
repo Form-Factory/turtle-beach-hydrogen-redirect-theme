@@ -1,2 +1,14 @@
 {
+  "shopify": {
+    "checkout": {
+      "marketing": {
+        "accept_sms_checkbox_label": "Sign up for updates via SMS! Sign up and be the first to know about the latest news, deals and events.*",
+        "sms": {
+          "disclaimer": {
+            "description_html": "*By signing up with  your mobile number, you consent to receive  special offers, marketing messages and shopping cart reminders from Turtle Beach at the phone number you provide. Consent is not a condition of purchase. You may reply STOP to unsubscribe at any time.<br \/>Reply HELP for help. Message frequency will vary. Message & data rates may apply. See our {{.privacy_policy_link }} and {{ terms_of_service_link }} for more information"
+          }
+        }
+      }
+    }
+  }
 }
