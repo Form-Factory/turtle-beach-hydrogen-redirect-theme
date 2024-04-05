@@ -6,7 +6,8 @@
           "disclaimer": {
             "description_html": "*By signing up with  your mobile number, you consent to receive  special offers, marketing messages and shopping cart reminders from Turtle Beach at the phone number you provide. Consent is not a condition of purchase. You may reply STOP to unsubscribe at any time. <br \/><br \/> Reply HELP for help. Message frequency will vary. Message & data rates may apply. See our <a href='https:\/\/ca.turtlebeach.com\/fr\/pages\/privacy'>Privacy Policy<\/a> and <a href='https:\/\/ca.turtlebeach.com\/fr\/pages\/terms-conditions'>Terms & Conditions<\/a> for more information"
           }
-        }
+        },
+        "accept_shop_pay_marketing_checkbox_label": "Inscrivez-vous pour recevoir des informations par SMS ! Inscrivez-vous pour recevoir en premier les dernières infos, offres et événements.*"
       }
     }
   }
