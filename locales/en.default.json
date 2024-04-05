@@ -2,7 +2,7 @@
   "shopify": {
     "checkout": {
       "marketing": {
-        "accept_sms_checkbox_label": "Sign up for updates via SMS! Sign up and be the first to know about the latest news, deals, events, and important order updates.*"
+        "accept_sms_checkbox_label": "<strong>Sign up for updates via SMS!<\/strong> Sign up and be the first to know about the latest news, deals, events, and important order updates.*"
       }
     }
   }
