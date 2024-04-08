@@ -4,7 +4,7 @@
       "marketing": {
         "sms": {
           "disclaimer": {
-            "description_html": "*En vous inscrivant avec votre numéro de téléphone portable, vous acceptez de recevoir des offres spéciales, des messages marketing et des rappels concernant votre panier de la part de Turtle Beach au numéro de téléphone indiqué. Ce consentement n'est pas une condition d'achat. Vous pouvez répondre STOP pour vous désabonner à tout moment.                                                                                                  Répondez HELP pour demander de l'aide. La fréquence des messages sera variable. Des frais de messages et de données peuvent s'appliquer. Consultez notre politique de confidentialité et nos conditions générales pour plus d'informations"
+            "description_html": "*Wenn du dich mit Ihrer Handynummer anmeldest, erklärst du dich damit einverstanden, von Turtle Beach unter der von dir angegebenen Telefonnummer Sonderangebote, Marketingnachrichten und Erinnerungen an den Einkaufswagen zu erhalten. Die Zustimmung ist keine Bedingung für den Kauf eines Produkts. Du kannst jederzeit mit „STOPP“ antworten, um das Abonnement zu kündigen.                                                                                                  Antworte mit „HILFE“ für Hilfe. Die Häufigkeit der Nachrichten variiert. Es können Nachrichten- und Datentarife gelten. Weitere Informationen findest du in unserer Datenschutzrichtlinie und den Allgemeinen Geschäftsbedingungen"
           }
         },
         "accept_shop_pay_marketing_checkbox_label": "Envoyez-moi des nouvelles et des offres de cette boutique",
