@@ -1,0 +1,15 @@
+{
+  "shopify": {
+    "checkout": {
+      "marketing": {
+        "sms": {
+          "disclaimer": {
+            "description_html": "*En vous inscrivant avec votre numéro de téléphone portable, vous acceptez de recevoir des offres spéciales, des messages marketing et des rappels concernant votre panier de la part de Turtle Beach au numéro de téléphone indiqué. Ce consentement n'est pas une condition d'achat. Vous pouvez répondre STOP pour vous désabonner à tout moment.                                                                                                  Répondez HELP pour demander de l'aide. La fréquence des messages sera variable. Des frais de messages et de données peuvent s'appliquer. Consultez notre politique de confidentialité et nos conditions générales pour plus d'informations"
+          }
+        },
+        "accept_shop_pay_marketing_checkbox_label": "Envoyez-moi des nouvelles et des offres de cette boutique",
+        "accept_sms_checkbox_label": "Inscrivez-vous pour recevoir des informations par SMS !  Inscrivez-vous pour recevoir en premier les dernières infos, offres et événements.*"
+      }
+    }
+  }
+}
