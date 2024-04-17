@@ -1,3 +1,10 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
   <head>
@@ -181,28 +188,9 @@
 <!--End_Gem_Page_Header_Script-->
 </head>
   <body>
-    {%- if should_redirect -%}
-      <div class="redirect">
-          {%- if settings.debug_mode -%}
-            <h1>Debug Mode Enabled</h1>
-            <p>Page will not redirect, turn off in theme settings</p>
-          {%- else  -%}
-            <h1>Redirecting...</h1>
-          {%- endif -%}
-          <p>
-            <a id="redirect-link">Click here</a>
-            if you are not automically redirected.
-          </p>
-          <script>
-            if (!window.Shopify.designMode) {
-              var redirectLink = document.getElementById('redirect-link');
-              redirectLink.href = window.storefrontRedirectUrl;
-            }
-          </script>
-      </div>
-    {%- endif -%}
-    {{ content_for_layout }}
-  <!--Gem_Page_Footer_Script-->
+<div class="gem-container">
+	{{ content_for_layout }}
+</div><!-- end .gem-container --><!--Gem_Page_Footer_Script-->
   {%- liquid
     assign gpTemplateSuffix = template.suffix
     assign arrSplitSuffix = gpTemplateSuffix | split: '-'
@@ -229,5 +217,6 @@
     {% render 'gem-app-footer-scripts', GEM_FOOTER_SCRIPT: GEM_FOOTER_SCRIPT %}
   {% endif %}
 <!--End_Gem_Page_Footer_Script-->
+
 </body>
 </html>
