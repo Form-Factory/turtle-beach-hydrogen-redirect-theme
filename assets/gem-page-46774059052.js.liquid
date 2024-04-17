@@ -1,0 +1,287 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+
+    
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1698265637225').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+    
+    
+    
+    
+    
+    
+    (function( jQuery ){
+  var $module = jQuery('#m-1698265637186').children('.module');
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+  if (mode == 'production') {
+    jQuery(window).ready(function() {
+      $module.gfVideoBg();
+    })
+  } else {
+    $module.gfVideoBg();
+  }
+})( window.GemQuery || jQuery );
+  (function(jQuery) {
+    var $module = jQuery('#m-1698265637155').children('.module');
+    $module.find('.video-popup').magnificPopup({
+        type: 'iframe',
+        iframe: {
+            patterns: {
+                youtube: {
+                    index: 'youtube.com/',
+                    id: function(url) {
+                        var id;
+                        if (url.indexOf('youtu.be/') != -1) {
+                            id = url.split('youtu.be/');
+                        } else {
+                            id = url.split(/watch\?v=/);
+                        }
+                        if (id && id[1] != undefined) {
+                            id = id[1].split(/&/)[0];
+                        }
+                        return id;
+                    },
+                    src: '//www.youtube.com/embed/%id%?rel=0'
+                },
+                youtu: {
+                    index: 'youtu.be/',
+                    id: function(url) {
+                        var id;
+                        if (url.indexOf('youtu.be/') != -1) {
+                            id = url.split('youtu.be/');
+                        } else {
+                            id = url.split(/watch\?v=/);
+                        }
+                        if (id && id[1] != undefined) {
+                            id = id[1].split(/&/)[0];
+                        }
+                        return id;
+                    },
+                    src: '//www.youtube.com/embed/%id%?rel=0'
+                },
+                vimeo: {
+                    index: 'vimeo.com/',
+                    id: function(url) {
+                        var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
+                        if ( !m || !m[5] ) return null;
+                        return m[5];
+                    },
+                    src: '//player.vimeo.com/video/%id%?autoplay=1'
+                }
+            }
+        }
+    });
+})(window.GemQuery || jQuery);
+    
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637178"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-right","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637212"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-right","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    
+    
+  
+    
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637202"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-left","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637261"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-left","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    
+    
+  
+    
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637199"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-left","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637146"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-left","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    
+    
+  
+    
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637272"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-right","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637192"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-right","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    
+    
+  
+    
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637229"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-left","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637228"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-left","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    
+    
+  
+    
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637187"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-left","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637266"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-left","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    
+    
+  
+    
+  
+    
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637170"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-right","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637209"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-right","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    window.__gfAnimate.registerScroll(jQuery("#e-1698265637183"), '{"animation":{"screens":{"lg":true,"md":true,"sm":true,"xs":true},"name":"fade_in-right","delay":0,"duration":"1500"},"interaction":{"key":"scroll-into-view","type":"level2"}}');
+    
+    
+  
+    
+  jQuery(function() {
+    try {
+var $module = jQuery('#m-1698265637215').children('.module');   
+var navspeed = $module.data('navspeed'),
+    autoplaytimeout = $module.data('autoplaytimeout'),
+    autoplayhoverpause = $module.data('autoplayhoverpause'),
+    navlg = $module.data('navlg'),
+    navmd = $module.data('navmd'),
+    navsm = $module.data('navsm'),
+    navxs = $module.data('navxs'),
+    collg = $module.data('collg'),
+    colmd = $module.data('colmd'),
+    colsm = $module.data('colsm'),
+    colxs = $module.data('colxs'),
+    dotslg = $module.data('dotslg'),
+    dotsmd = $module.data('dotsmd'),
+    dotssm = $module.data('dotssm'),
+    dotsxs = $module.data('dotsxs'),
+    marginlg = parseInt($module.data('marginlg')),
+    marginmd = parseInt($module.data('marginmd')),
+    marginsm = parseInt($module.data('marginsm')),
+    marginxs = parseInt($module.data('marginxs'));
+    
+var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+if(mode == 'production') {
+    var autoplay = $module.data('autoplay'), 
+loop = $module.data('loop');
+} else {
+    var autoplay = 0, 
+loop = 0;
+}
+    
+$module.owlCarousel({
+    mouseDrag: false,
+    autoplayHoverPause: autoplayhoverpause,
+    autoplay: autoplay,
+    autoplayTimeout: autoplaytimeout,
+    loop: loop,
+    navSpeed: navspeed,
+    autoWidth: !1,
+    responsiveClass:true,
+    responsive:{
+0:{
+    items:colxs,
+    nav: navxs,
+    dots:dotsxs,
+    margin: marginxs,
+    slideBy: 2
+},
+768:{
+    items:colsm,
+    nav: navsm,
+    dots:dotssm,
+    margin: marginsm,
+    slideBy: 3
+},
+992:{
+    items:colmd,
+    nav: navmd,
+    dots:dotsmd,
+    margin: marginmd,
+    slideBy: 3
+},
+1200:{
+    items:collg,
+    nav: navlg,
+    dots:dotslg,
+    margin: marginlg,
+    slideBy: 3
+}
+    }
+}); 
+    } catch(err) {}
+
+});
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637245').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637245-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637245-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637245-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637279').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637279-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637279-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637279-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637204').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637204-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637204-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1698265637204-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
