@@ -177,27 +177,5 @@
     </style>
   {% render 'gp-head' %}
 </head>
-  <body>
-    {%- if should_redirect -%}
-      <div class="redirect">
-          {%- if settings.debug_mode -%}
-            <h1>Debug Mode Enabled</h1>
-            <p>Page will not redirect, turn off in theme settings</p>
-          {%- else  -%}
-            <h1>Redirecting...</h1>
-          {%- endif -%}
-          <p>
-            <a id="redirect-link">Click here</a>
-            if you are not automically redirected.
-          </p>
-          <script>
-            if (!window.Shopify.designMode) {
-              var redirectLink = document.getElementById('redirect-link');
-              redirectLink.href = window.storefrontRedirectUrl;
-            }
-          </script>
-      </div>
-    {%- endif -%}
-    {{ content_for_layout }}
-  </body>
+  <body>{{ content_for_layout }}</body>
 </html>
