@@ -1,0 +1,292 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+
+        jQuery(function() {
+            var $module = jQuery('#m-1517619940664');
+
+            if($module.children('.module').attr('data-fullheight') == '1' ){
+                var wHeight = jQuery(window).height();
+                $module.css({
+                    'height': wHeight
+                });
+                jQuery(window).resize(function(){
+                    $module.css('height', jQuery(window).height());
+                });
+
+                $module.children('.module').addClass('full-height');
+            } else {
+                $module.css({
+                    'height': 'auto'
+                });
+                jQuery(window).resize(function(){
+                    $module.css('height', 'auto');
+                });
+
+                $module.children('.module').removeClass('full-height');
+            }
+
+            var image = $module.children('.module').data('image') || '';
+            var speed = parseFloat($module.children('.module').data('speed')) || 0.2;
+            if($module.data('gfparallax') != undefined) {
+                $module.removeData('gfparallax');
+            }
+            $module.gfParallax({
+                'image': image,
+                'speed': speed
+            });
+        }); 
+    
+    
+  
+        jQuery(function() {
+            try {
+                var $module = jQuery('#m-1670441878737').children('.module');
+                var single   = $module.attr('data-single');
+                var openDefault  = $module.attr('data-openDefault');
+                var openTab  = $module.attr('data-openTab');
+                var mode     = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    
+                if(openDefault == 0 || openDefault == '0') {
+                    openTab = '0';
+                }
+    
+                $module.gfAccordion({
+                    single: single,
+                    openTab: openTab,
+                    mode: mode
+                });
+    
+                var borderColor = $module.attr('data-borderColor');
+                var borderSize = $module.attr('data-borderSize');
+    
+                $module.children('[data-accordion]').children('[data-control]').css('border-bottom', borderSize + ' solid ' + borderColor);
+                $module.children('[data-accordion]').children('[data-content]').children().css('border-bottom', borderSize + ' solid ' + borderColor);
+                
+            } catch(err) {}
+        });
+    
+        jQuery(function() {
+            try {
+                var $module = jQuery('#m-1670441878863').children('.module');
+                var single   = $module.attr('data-single');
+                var openDefault  = $module.attr('data-openDefault');
+                var openTab  = $module.attr('data-openTab');
+                var mode     = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    
+                if(openDefault == 0 || openDefault == '0') {
+                    openTab = '0';
+                }
+    
+                $module.gfAccordion({
+                    single: single,
+                    openTab: openTab,
+                    mode: mode
+                });
+    
+                var borderColor = $module.attr('data-borderColor');
+                var borderSize = $module.attr('data-borderSize');
+    
+                $module.children('[data-accordion]').children('[data-control]').css('border-bottom', borderSize + ' solid ' + borderColor);
+                $module.children('[data-accordion]').children('[data-content]').children().css('border-bottom', borderSize + ' solid ' + borderColor);
+                
+            } catch(err) {}
+        });
+    
+        jQuery(function() {
+            try {
+                var $module = jQuery('#m-1670441878704').children('.module');
+                var single   = $module.attr('data-single');
+                var openDefault  = $module.attr('data-openDefault');
+                var openTab  = $module.attr('data-openTab');
+                var mode     = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    
+                if(openDefault == 0 || openDefault == '0') {
+                    openTab = '0';
+                }
+    
+                $module.gfAccordion({
+                    single: single,
+                    openTab: openTab,
+                    mode: mode
+                });
+    
+                var borderColor = $module.attr('data-borderColor');
+                var borderSize = $module.attr('data-borderSize');
+    
+                $module.children('[data-accordion]').children('[data-control]').css('border-bottom', borderSize + ' solid ' + borderColor);
+                $module.children('[data-accordion]').children('[data-content]').children().css('border-bottom', borderSize + ' solid ' + borderColor);
+                
+            } catch(err) {}
+        });
+    
+        jQuery(function() {
+            try {
+                var $module = jQuery('#m-1670441878841').children('.module');
+                var single   = $module.attr('data-single');
+                var openDefault  = $module.attr('data-openDefault');
+                var openTab  = $module.attr('data-openTab');
+                var mode     = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    
+                if(openDefault == 0 || openDefault == '0') {
+                    openTab = '0';
+                }
+    
+                $module.gfAccordion({
+                    single: single,
+                    openTab: openTab,
+                    mode: mode
+                });
+    
+                var borderColor = $module.attr('data-borderColor');
+                var borderSize = $module.attr('data-borderSize');
+    
+                $module.children('[data-accordion]').children('[data-control]').css('border-bottom', borderSize + ' solid ' + borderColor);
+                $module.children('[data-accordion]').children('[data-content]').children().css('border-bottom', borderSize + ' solid ' + borderColor);
+                
+            } catch(err) {}
+        });
+    
+        jQuery(function() {
+            try {
+                var $module = jQuery('#m-1670441878845').children('.module');
+                var single   = $module.attr('data-single');
+                var openDefault  = $module.attr('data-openDefault');
+                var openTab  = $module.attr('data-openTab');
+                var mode     = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    
+                if(openDefault == 0 || openDefault == '0') {
+                    openTab = '0';
+                }
+    
+                $module.gfAccordion({
+                    single: single,
+                    openTab: openTab,
+                    mode: mode
+                });
+    
+                var borderColor = $module.attr('data-borderColor');
+                var borderSize = $module.attr('data-borderSize');
+    
+                $module.children('[data-accordion]').children('[data-control]').css('border-bottom', borderSize + ' solid ' + borderColor);
+                $module.children('[data-accordion]').children('[data-content]').children().css('border-bottom', borderSize + ' solid ' + borderColor);
+                
+            } catch(err) {}
+        });
+    
+        jQuery(function() {
+            try {
+                var $module = jQuery('#m-1670441878716').children('.module');
+                var single   = $module.attr('data-single');
+                var openDefault  = $module.attr('data-openDefault');
+                var openTab  = $module.attr('data-openTab');
+                var mode     = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    
+                if(openDefault == 0 || openDefault == '0') {
+                    openTab = '0';
+                }
+    
+                $module.gfAccordion({
+                    single: single,
+                    openTab: openTab,
+                    mode: mode
+                });
+    
+                var borderColor = $module.attr('data-borderColor');
+                var borderSize = $module.attr('data-borderSize');
+    
+                $module.children('[data-accordion]').children('[data-control]').css('border-bottom', borderSize + ' solid ' + borderColor);
+                $module.children('[data-accordion]').children('[data-content]').children().css('border-bottom', borderSize + ' solid ' + borderColor);
+                
+            } catch(err) {}
+        });
+    
+    
+  
+        jQuery(function() {
+            try {
+                var $module = jQuery('#m-1707782360508').children('.module');
+                var single   = $module.attr('data-single');
+                var openDefault  = $module.attr('data-openDefault');
+                var openTab  = $module.attr('data-openTab');
+                var mode     = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    
+                if(openDefault == 0 || openDefault == '0') {
+                    openTab = '0';
+                }
+    
+                $module.gfAccordion({
+                    single: single,
+                    openTab: openTab,
+                    mode: mode
+                });
+    
+                var borderColor = $module.attr('data-borderColor');
+                var borderSize = $module.attr('data-borderSize');
+    
+                $module.children('[data-accordion]').children('[data-control]').css('border-bottom', borderSize + ' solid ' + borderColor);
+                $module.children('[data-accordion]').children('[data-content]').children().css('border-bottom', borderSize + ' solid ' + borderColor);
+                
+            } catch(err) {}
+        });
+    
+    
+  
+        jQuery(function() {
+            try {
+                var $module = jQuery('#m-1708123060795').children('.module');
+                var single   = $module.attr('data-single');
+                var openDefault  = $module.attr('data-openDefault');
+                var openTab  = $module.attr('data-openTab');
+                var mode     = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    
+                if(openDefault == 0 || openDefault == '0') {
+                    openTab = '0';
+                }
+    
+                $module.gfAccordion({
+                    single: single,
+                    openTab: openTab,
+                    mode: mode
+                });
+    
+                var borderColor = $module.attr('data-borderColor');
+                var borderSize = $module.attr('data-borderSize');
+    
+                $module.children('[data-accordion]').children('[data-control]').css('border-bottom', borderSize + ' solid ' + borderColor);
+                $module.children('[data-accordion]').children('[data-content]').children().css('border-bottom', borderSize + ' solid ' + borderColor);
+                
+            } catch(err) {}
+        });
+    
+        jQuery(function() {
+            try {
+                var $module = jQuery('#m-1701294300776').children('.module');
+                var single   = $module.attr('data-single');
+                var openDefault  = $module.attr('data-openDefault');
+                var openTab  = $module.attr('data-openTab');
+                var mode     = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    
+                if(openDefault == 0 || openDefault == '0') {
+                    openTab = '0';
+                }
+    
+                $module.gfAccordion({
+                    single: single,
+                    openTab: openTab,
+                    mode: mode
+                });
+    
+                var borderColor = $module.attr('data-borderColor');
+                var borderSize = $module.attr('data-borderSize');
+    
+                $module.children('[data-accordion]').children('[data-control]').css('border-bottom', borderSize + ' solid ' + borderColor);
+                $module.children('[data-accordion]').children('[data-content]').children().css('border-bottom', borderSize + ' solid ' + borderColor);
+                
+            } catch(err) {}
+        });
+    
