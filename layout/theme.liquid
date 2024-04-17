@@ -59,18 +59,20 @@
           const debugMessages = new Map();
           // If the hostname matches a listed myshopify domain, redirect to the custom domain
           const hostnamePairStr = "{{ settings.myshopify_pairs | newline_to_br | strip_newlines | replace: ' ', '' }}";
+          const hostnameMatch = false
           if (hostnamePairStr) {
             const hostnamePairs = hostnamePairStr.split('<br/>');
             const hostnameMap = new Map(hostnamePairs.map(hostnamePair => hostnamePair.split('>')))
             if (hostnameMap.has(hostname)) {
               debugMessages.set('Hostname matched, modifying hostname',hostname)
+              hostnameMatch = true
               redirectUrl.hostname = hostnameMap.get(hostname)
             }
           } 
 
           // Subdomain Pairs
           const subdomainPairStr = "{{ settings.subdomain_pairs | newline_to_br | strip_newlines | replace: ' ', '' }}";
-          if (subdomainPairStr && !hostnameMap.has(hostname)) {
+          if (subdomainPairStr && !hostnameMatch) {
             const subdomainPairs = subdomainPairStr.split('<br/>');
             const subdomainMap = new Map(subdomainPairs.map(subdomainPair => subdomainPair.split('>')))
             debugMessages.set('Subdomain Map Recieved',subdomainMap)
@@ -231,21 +233,6 @@
     {% render 'gem-app-footer-scripts', GEM_FOOTER_SCRIPT: GEM_FOOTER_SCRIPT %}
   {% endif %}
 <!--End_Gem_Page_Footer_Script-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
