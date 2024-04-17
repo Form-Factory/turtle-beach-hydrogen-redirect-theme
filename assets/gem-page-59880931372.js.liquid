@@ -1,0 +1,914 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+
+      
+      
+      
+      
+      
+      
+          jQuery(function () {
+  var $hero = jQuery('#m-1598531678960');
+  var $module = jQuery('#m-1598531678960').children('.module');
+
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+  var $heroLink = $hero.children('.hero-link');
+  if (mode == 'dev' && $heroLink.length > 0) {
+    $hero.children('.hero-link').hide();
+  }
+  if (mode == 'production' && $heroLink.length > 0) {
+    $module.off('click.openLink').on('click.openLink', function (e) {
+      var $target = jQuery(e.target);
+      if ($target.length > 0) {
+        var linkTarget = typeof $target.attr('href') !== "undefined" ? $target.attr('href') : "";
+        if (linkTarget == "") {
+          var link = typeof $heroLink.attr('href') !== "undefined" ? $heroLink.attr('href') : "";
+          var newTab = typeof $heroLink.attr('target') !== "undefined" ? $heroLink.attr('target') : "";
+          if (link != "") {
+            if (newTab == "") {
+              window.location.href = link;
+            } else {
+              window.open(link, newTab);
+            }
+          }
+        }
+      };
+    })
+  }
+
+  var height = jQuery.trim($module.attr("data-height"));
+  if (height == undefined || height == "") {
+    $hero.css("height", "auto!important");
+  } else {
+    $hero.css("height", "inherit");
+  }
+
+
+  var effect = $module.attr('data-effect');
+  var transition = $module.attr('data-transition');
+
+  if (effect == 'effect-zoom') {
+    $module.parent().addClass(effect);
+
+    setTimeout(function () {
+      var backgroundImage = $module.parent().css('background-image');
+      var backgroundSize = $module.parent().css('background-size');
+      var backgroundPosition = $module.parent().css('background-position');
+      $module.siblings('.gf_hero-bg-wrap').css({
+        'background-image': 'inherit',
+        'background-size': 'inherit',
+        'background-position': 'inherit',
+        '-webkit-transition': 'transform ' + transition + 's ease-in-out',
+        '-moz-transition': 'transform ' + transition + 's ease-in-out',
+        '-ms-transition': 'transform ' + transition + 's ease-in-out',
+        '-o-transition': 'transform ' + transition + 's ease-in-out',
+        'transition': 'transform ' + transition + 's ease-in-out'
+      })
+      $module.siblings('.gf_hero-bg-wrap').children('.gf_hero-bg').css({
+        'background-image': 'inherit',
+        'background-size': 'inherit',
+        'background-position': 'inherit',
+        '-webkit-transition': 'transform ' + transition + 's ease-in-out',
+        '-moz-transition': 'transform ' + transition + 's ease-in-out',
+        '-ms-transition': 'transform ' + transition + 's ease-in-out',
+        '-o-transition': 'transform ' + transition + 's ease-in-out',
+        'transition': 'transform ' + transition + 's ease-in-out'
+      });
+    }, 300);
+  }
+
+  if ($module.attr('data-fixedMode') == '1') {
+    function changeImage() {
+      var backgroundImage = $module.parent().css('background-image');
+      if (backgroundImage) {
+        backgroundImage = backgroundImage.replace('url(', '').replace(')', '').replace(/\"/gi, "");
+        $module.find('.gf_hero-fixed').attr('src', backgroundImage);
+        $module.parent().addClass('gf_hero-fixed-mode');
+      }
+    }
+    changeImage();
+    let windowWidth = jQuery(window).width();
+    let timeoutResize = 0;
+    jQuery(window).resize(function () {
+      if (jQuery(window).width() == windowWidth) {
+        return;
+      }
+      windowWidth = jQuery(window).width();
+
+      if (timeoutResize) {
+        clearTimeout(timeoutResize);
+        timeoutResize = 0;
+      }
+
+      timeoutResize = window.setTimeout(function () {
+        changeImage();
+      }, 16);
+    });
+  } else {
+    $module.parent().removeClass('gf_hero-fixed-mode');
+  }
+});
+      
+      
+      
+      
+      
+      
+          jQuery(function () {
+  var $hero = jQuery('#m-1598531659165');
+  var $module = jQuery('#m-1598531659165').children('.module');
+
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+  var $heroLink = $hero.children('.hero-link');
+  if (mode == 'dev' && $heroLink.length > 0) {
+    $hero.children('.hero-link').hide();
+  }
+  if (mode == 'production' && $heroLink.length > 0) {
+    $module.off('click.openLink').on('click.openLink', function (e) {
+      var $target = jQuery(e.target);
+      if ($target.length > 0) {
+        var linkTarget = typeof $target.attr('href') !== "undefined" ? $target.attr('href') : "";
+        if (linkTarget == "") {
+          var link = typeof $heroLink.attr('href') !== "undefined" ? $heroLink.attr('href') : "";
+          var newTab = typeof $heroLink.attr('target') !== "undefined" ? $heroLink.attr('target') : "";
+          if (link != "") {
+            if (newTab == "") {
+              window.location.href = link;
+            } else {
+              window.open(link, newTab);
+            }
+          }
+        }
+      };
+    })
+  }
+
+  var height = jQuery.trim($module.attr("data-height"));
+  if (height == undefined || height == "") {
+    $hero.css("height", "auto!important");
+  } else {
+    $hero.css("height", "inherit");
+  }
+
+
+  var effect = $module.attr('data-effect');
+  var transition = $module.attr('data-transition');
+
+  if (effect == 'effect-zoom') {
+    $module.parent().addClass(effect);
+
+    setTimeout(function () {
+      var backgroundImage = $module.parent().css('background-image');
+      var backgroundSize = $module.parent().css('background-size');
+      var backgroundPosition = $module.parent().css('background-position');
+      $module.siblings('.gf_hero-bg-wrap').css({
+        'background-image': 'inherit',
+        'background-size': 'inherit',
+        'background-position': 'inherit',
+        '-webkit-transition': 'transform ' + transition + 's ease-in-out',
+        '-moz-transition': 'transform ' + transition + 's ease-in-out',
+        '-ms-transition': 'transform ' + transition + 's ease-in-out',
+        '-o-transition': 'transform ' + transition + 's ease-in-out',
+        'transition': 'transform ' + transition + 's ease-in-out'
+      })
+      $module.siblings('.gf_hero-bg-wrap').children('.gf_hero-bg').css({
+        'background-image': 'inherit',
+        'background-size': 'inherit',
+        'background-position': 'inherit',
+        '-webkit-transition': 'transform ' + transition + 's ease-in-out',
+        '-moz-transition': 'transform ' + transition + 's ease-in-out',
+        '-ms-transition': 'transform ' + transition + 's ease-in-out',
+        '-o-transition': 'transform ' + transition + 's ease-in-out',
+        'transition': 'transform ' + transition + 's ease-in-out'
+      });
+    }, 300);
+  }
+
+  if ($module.attr('data-fixedMode') == '1') {
+    function changeImage() {
+      var backgroundImage = $module.parent().css('background-image');
+      if (backgroundImage) {
+        backgroundImage = backgroundImage.replace('url(', '').replace(')', '').replace(/\"/gi, "");
+        $module.find('.gf_hero-fixed').attr('src', backgroundImage);
+        $module.parent().addClass('gf_hero-fixed-mode');
+      }
+    }
+    changeImage();
+    let windowWidth = jQuery(window).width();
+    let timeoutResize = 0;
+    jQuery(window).resize(function () {
+      if (jQuery(window).width() == windowWidth) {
+        return;
+      }
+      windowWidth = jQuery(window).width();
+
+      if (timeoutResize) {
+        clearTimeout(timeoutResize);
+        timeoutResize = 0;
+      }
+
+      timeoutResize = window.setTimeout(function () {
+        changeImage();
+      }, 16);
+    });
+  } else {
+    $module.parent().removeClass('gf_hero-fixed-mode');
+  }
+});
+      
+      
+          jQuery(function () {
+  var $hero = jQuery('#m-1598474507485');
+  var $module = jQuery('#m-1598474507485').children('.module');
+
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+  var $heroLink = $hero.children('.hero-link');
+  if (mode == 'dev' && $heroLink.length > 0) {
+    $hero.children('.hero-link').hide();
+  }
+  if (mode == 'production' && $heroLink.length > 0) {
+    $module.off('click.openLink').on('click.openLink', function (e) {
+      var $target = jQuery(e.target);
+      if ($target.length > 0) {
+        var linkTarget = typeof $target.attr('href') !== "undefined" ? $target.attr('href') : "";
+        if (linkTarget == "") {
+          var link = typeof $heroLink.attr('href') !== "undefined" ? $heroLink.attr('href') : "";
+          var newTab = typeof $heroLink.attr('target') !== "undefined" ? $heroLink.attr('target') : "";
+          if (link != "") {
+            if (newTab == "") {
+              window.location.href = link;
+            } else {
+              window.open(link, newTab);
+            }
+          }
+        }
+      };
+    })
+  }
+
+  var height = jQuery.trim($module.attr("data-height"));
+  if (height == undefined || height == "") {
+    $hero.css("height", "auto!important");
+  } else {
+    $hero.css("height", "inherit");
+  }
+
+
+  var effect = $module.attr('data-effect');
+  var transition = $module.attr('data-transition');
+
+  if (effect == 'effect-zoom') {
+    $module.parent().addClass(effect);
+
+    setTimeout(function () {
+      var backgroundImage = $module.parent().css('background-image');
+      var backgroundSize = $module.parent().css('background-size');
+      var backgroundPosition = $module.parent().css('background-position');
+      $module.siblings('.gf_hero-bg-wrap').css({
+        'background-image': 'inherit',
+        'background-size': 'inherit',
+        'background-position': 'inherit',
+        '-webkit-transition': 'transform ' + transition + 's ease-in-out',
+        '-moz-transition': 'transform ' + transition + 's ease-in-out',
+        '-ms-transition': 'transform ' + transition + 's ease-in-out',
+        '-o-transition': 'transform ' + transition + 's ease-in-out',
+        'transition': 'transform ' + transition + 's ease-in-out'
+      })
+      $module.siblings('.gf_hero-bg-wrap').children('.gf_hero-bg').css({
+        'background-image': 'inherit',
+        'background-size': 'inherit',
+        'background-position': 'inherit',
+        '-webkit-transition': 'transform ' + transition + 's ease-in-out',
+        '-moz-transition': 'transform ' + transition + 's ease-in-out',
+        '-ms-transition': 'transform ' + transition + 's ease-in-out',
+        '-o-transition': 'transform ' + transition + 's ease-in-out',
+        'transition': 'transform ' + transition + 's ease-in-out'
+      });
+    }, 300);
+  }
+
+  if ($module.attr('data-fixedMode') == '1') {
+    function changeImage() {
+      var backgroundImage = $module.parent().css('background-image');
+      if (backgroundImage) {
+        backgroundImage = backgroundImage.replace('url(', '').replace(')', '').replace(/\"/gi, "");
+        $module.find('.gf_hero-fixed').attr('src', backgroundImage);
+        $module.parent().addClass('gf_hero-fixed-mode');
+      }
+    }
+    changeImage();
+    let windowWidth = jQuery(window).width();
+    let timeoutResize = 0;
+    jQuery(window).resize(function () {
+      if (jQuery(window).width() == windowWidth) {
+        return;
+      }
+      windowWidth = jQuery(window).width();
+
+      if (timeoutResize) {
+        clearTimeout(timeoutResize);
+        timeoutResize = 0;
+      }
+
+      timeoutResize = window.setTimeout(function () {
+        changeImage();
+      }, 16);
+    });
+  } else {
+    $module.parent().removeClass('gf_hero-fixed-mode');
+  }
+});
+      
+      
+      
+      
+      
+          jQuery(function () {
+  var $hero = jQuery('#m-1598474507564');
+  var $module = jQuery('#m-1598474507564').children('.module');
+
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+  var $heroLink = $hero.children('.hero-link');
+  if (mode == 'dev' && $heroLink.length > 0) {
+    $hero.children('.hero-link').hide();
+  }
+  if (mode == 'production' && $heroLink.length > 0) {
+    $module.off('click.openLink').on('click.openLink', function (e) {
+      var $target = jQuery(e.target);
+      if ($target.length > 0) {
+        var linkTarget = typeof $target.attr('href') !== "undefined" ? $target.attr('href') : "";
+        if (linkTarget == "") {
+          var link = typeof $heroLink.attr('href') !== "undefined" ? $heroLink.attr('href') : "";
+          var newTab = typeof $heroLink.attr('target') !== "undefined" ? $heroLink.attr('target') : "";
+          if (link != "") {
+            if (newTab == "") {
+              window.location.href = link;
+            } else {
+              window.open(link, newTab);
+            }
+          }
+        }
+      };
+    })
+  }
+
+  var height = jQuery.trim($module.attr("data-height"));
+  if (height == undefined || height == "") {
+    $hero.css("height", "auto!important");
+  } else {
+    $hero.css("height", "inherit");
+  }
+
+
+  var effect = $module.attr('data-effect');
+  var transition = $module.attr('data-transition');
+
+  if (effect == 'effect-zoom') {
+    $module.parent().addClass(effect);
+
+    setTimeout(function () {
+      var backgroundImage = $module.parent().css('background-image');
+      var backgroundSize = $module.parent().css('background-size');
+      var backgroundPosition = $module.parent().css('background-position');
+      $module.siblings('.gf_hero-bg-wrap').css({
+        'background-image': 'inherit',
+        'background-size': 'inherit',
+        'background-position': 'inherit',
+        '-webkit-transition': 'transform ' + transition + 's ease-in-out',
+        '-moz-transition': 'transform ' + transition + 's ease-in-out',
+        '-ms-transition': 'transform ' + transition + 's ease-in-out',
+        '-o-transition': 'transform ' + transition + 's ease-in-out',
+        'transition': 'transform ' + transition + 's ease-in-out'
+      })
+      $module.siblings('.gf_hero-bg-wrap').children('.gf_hero-bg').css({
+        'background-image': 'inherit',
+        'background-size': 'inherit',
+        'background-position': 'inherit',
+        '-webkit-transition': 'transform ' + transition + 's ease-in-out',
+        '-moz-transition': 'transform ' + transition + 's ease-in-out',
+        '-ms-transition': 'transform ' + transition + 's ease-in-out',
+        '-o-transition': 'transform ' + transition + 's ease-in-out',
+        'transition': 'transform ' + transition + 's ease-in-out'
+      });
+    }, 300);
+  }
+
+  if ($module.attr('data-fixedMode') == '1') {
+    function changeImage() {
+      var backgroundImage = $module.parent().css('background-image');
+      if (backgroundImage) {
+        backgroundImage = backgroundImage.replace('url(', '').replace(')', '').replace(/\"/gi, "");
+        $module.find('.gf_hero-fixed').attr('src', backgroundImage);
+        $module.parent().addClass('gf_hero-fixed-mode');
+      }
+    }
+    changeImage();
+    let windowWidth = jQuery(window).width();
+    let timeoutResize = 0;
+    jQuery(window).resize(function () {
+      if (jQuery(window).width() == windowWidth) {
+        return;
+      }
+      windowWidth = jQuery(window).width();
+
+      if (timeoutResize) {
+        clearTimeout(timeoutResize);
+        timeoutResize = 0;
+      }
+
+      timeoutResize = window.setTimeout(function () {
+        changeImage();
+      }, 16);
+    });
+  } else {
+    $module.parent().removeClass('gf_hero-fixed-mode');
+  }
+});
+      
+      
+      
+      
+          jQuery(function() {
+  var $hero = jQuery('#m-1595609074926');
+  var $module = jQuery('#m-1595609074926').children('.module');
+
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+  var $heroLink = $hero.children('.hero-link');
+  if(mode == 'dev' && $heroLink.length > 0) {
+   $hero.children('.hero-link').hide();
+  }
+  if (mode == 'production' && $heroLink.length > 0) {
+    $module.off('click.openLink').on('click.openLink', function(e) {
+      var $target = jQuery(e.target);
+      if ($target.length > 0){
+        var linkTarget = typeof $target.attr('href') !== "undefined" ? $target.attr('href') : "";
+        if (linkTarget == "") {
+          var link = typeof $heroLink.attr('href') !== "undefined" ? $heroLink.attr('href') : "";
+          var newTab = typeof $heroLink.attr('target') !== "undefined" ? $heroLink.attr('target') : "";
+          if (link != "") {
+            if (newTab == "") {
+              window.location.href = link;
+            } else {
+              window.open(link, newTab);
+            }
+          }
+        }
+      };
+    })
+  }
+
+  var height = jQuery.trim($module.attr('data-height'));
+  if(height == undefined || height == '') {
+    $hero.attr('style', 'height: auto!important');
+    jQuery(window).resize(function(){
+      $hero.attr('style', 'height: auto!important');
+    });
+  } else {
+    $hero.removeAttr('style');
+  }
+
+  var effect = $module.attr('data-effect');
+  var transition = $module.attr('data-transition');
+
+  if(effect == 'effect-zoom') {   
+    $module.parent().addClass(effect);  
+
+    setTimeout(function() {
+      var backgroundImage = $module.parent().css('background-image');
+      var backgroundSize = $module.parent().css('background-size');
+      var backgroundPosition = $module.parent().css('background-position');
+      $module.siblings('.gf_hero-bg-wrap').css({
+        'background-image'      : 'inherit',
+        'background-size'       : 'inherit',
+        'background-position'   : 'inherit',
+        '-webkit-transition'    : 'transform ' + transition + 's ease-in-out',
+        '-moz-transition'       : 'transform ' + transition + 's ease-in-out',
+        '-ms-transition'        : 'transform ' + transition + 's ease-in-out',
+        '-o-transition'         : 'transform ' + transition + 's ease-in-out',
+        'transition'            : 'transform ' + transition + 's ease-in-out'
+      })
+      $module.siblings('.gf_hero-bg-wrap').children('.gf_hero-bg').css({
+        'background-image'      : 'inherit',
+        'background-size'       : 'inherit',
+        'background-position'   : 'inherit',
+        '-webkit-transition'    : 'transform ' + transition + 's ease-in-out',
+        '-moz-transition'       : 'transform ' + transition + 's ease-in-out',
+        '-ms-transition'        : 'transform ' + transition + 's ease-in-out',
+        '-o-transition'         : 'transform ' + transition + 's ease-in-out',
+        'transition'            : 'transform ' + transition + 's ease-in-out'
+      });
+    }, 300);
+  }
+
+  if($module.attr('data-fixedMode') == '1'){
+    function changeImage(){
+      var backgroundImage = $module.parent().css('background-image');
+      if(backgroundImage){
+       backgroundImage = backgroundImage.replace('url(','').replace(')','').replace(/\"/gi, "");
+       $module.find('.gf_hero-fixed').attr('src', backgroundImage);
+       $module.parent().addClass('gf_hero-fixed-mode');
+      }
+    }
+   changeImage();
+
+    jQuery(window).resize(function(){
+      changeImage();
+    });
+  } else {
+    $module.parent().removeAttr('style');
+    $module.parent().removeClass('gf_hero-fixed-mode');
+  }
+});
+      
+      
+      
+      
+    jQuery(function() {
+        var $module = jQuery('#m-1598473121159').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473121159-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473121159-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473121159-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473121159-3').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598474295239').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598474295239-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598474295239-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598474295239-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598474295239-3').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473121040').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473121040-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473121040-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473121040-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473121040-3').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188220').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188220-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188220-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188220-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188248').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+      
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188146').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188146-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188146-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188146-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188138').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188180').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188180-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188180-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188180-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188151').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188239').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188239-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188239-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188239-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188155').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188231').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188231-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188231-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188231-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188177').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+      
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188133').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188133-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188133-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188133-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188133-3').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188081').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188081-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188081-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188081-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188081-3').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188149').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188149-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188149-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188149-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188149-3').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188168').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188168-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188168-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188168-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598448188168-3').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+      
+      
+      
+    jQuery(function() {
+        var $module = jQuery('#m-1598473162051').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473162051-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473162051-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473162051-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473162048').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473162121').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473162121-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473162121-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473162121-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598473162154').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function() {}});
+    });
+  
+      
