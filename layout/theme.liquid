@@ -63,7 +63,7 @@
             const hostnamePairs = hostnamePairStr.split('<br/>');
             const hostnameMap = new Map(hostnamePairs.map(hostnamePair => hostnamePair.split('>')))
             if (hostnameMap.has(hostname)) {
-              debugMessages.set('Hostname matched, modifying hostname',newHostname)
+              debugMessages.set('Hostname matched, modifying hostname',hostname)
               redirectUrl.hostname = hostnameMap.get(hostname)
             }
           } 
