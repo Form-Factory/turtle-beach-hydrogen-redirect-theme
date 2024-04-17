@@ -2,6 +2,7 @@
   "current": {
     "custom_redirects": "\/example-path > \/new-path",
     "subdomain_pairs": "eu-checkout > eu\nde-checkout > de\nfr-checkout > fr\nit-checkout > it\nes-checkout > es\nnl-checkout > nl\ncheckout > www\nuk-checkout > uk\nca-checkout > ca",
+    "myshopify_pairs": "os-trtl.myshopify.com > www.turtlebeach.com",
     "integrate_with_customer_accounts": true,
     "debug_mode": false,
     "content_for_index": [
