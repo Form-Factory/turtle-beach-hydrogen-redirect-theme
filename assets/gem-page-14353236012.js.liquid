@@ -1,0 +1,655 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+
+        jQuery(function() {
+            var $module = jQuery('#m-1710272631492');
+            var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+            $module.css({
+                'height': 'auto'
+            });
+            jQuery(window).resize(function(){
+                $module.css('height', 'auto');
+            });
+            $module.children('.module').removeClass('full-height');
+
+            var image = $module.children('.module').data('image') || '';
+            if ($module.children('.module').data('speed') || $module.children('.module').data('speed') == 0) {
+                var speed = parseFloat($module.children('.module').data('speed'));
+            } else {
+                var speed = 0.2;
+            }
+            if($module.data('gfv3parallax') != undefined) {
+                $module.removeData('gfv3parallax');
+            }
+            $module.gfV3Parallax({
+                'image': image,
+                'speed': speed,
+                'mode': mode
+            });
+            if(mode == 'dev') {
+                var moduleId = "1710272631492";
+                var moduleIdSlug = moduleId.toString().replace(/-/g, '');
+                if (moduleIdSlug == "1710272631492") {
+                    window.getParallax1710272631492 = function() {
+                        return $module.data('gfv3parallax');
+                    }
+                }
+            }
+        }); 
+    
+        jQuery(function() {
+            var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+            var $module = jQuery('#m-1710272631575').children('.module');
+            if (mode == 'dev') {
+                jQuery('#m-1710272631575').attr('data-name', '');
+                jQuery('#m-1710272631575').css('background-image', 'none');
+                jQuery('#m-1710272631575').css('min-height', '50px');
+                jQuery('#m-1710272631575').removeAttr('data-image');
+                
+                var flag = true;
+                var $bkLiquid = parent.jQuery('body').find('#gfFrame').contents().find('#module-1710272631575');
+                if ($bkLiquid && $bkLiquid.length > 0) {
+                    var $settings = $bkLiquid.find('.settings');
+                    try {
+                        var name = '';
+                        var imageUrl = '';
+                        settings = JSON.parse($settings.html());
+                        for (var i = 0; i < settings.length; i++) {
+                            if (settings[i].name == 'name') {
+                                name = settings[i].default_value
+                            }
+                            if (settings[i].name == 'image') {
+                                imageUrl = settings[i].default_value
+                            }
+                        }
+                        if (imageUrl != '') {
+                            flag = false;
+                            jQuery('#m-1710272631575').css('background-image', 'url(' + imageUrl + ')');
+                            jQuery('#m-1710272631575').css('min-height', '100px');
+                            jQuery('#m-1710272631575').attr('data-image', 'true');
+                        }
+                        if (name != '' && name != 'Custom Code') {
+                            flag = false;
+                            jQuery('#m-1710272631575').attr('data-name', name);
+                        }
+                    } catch(error) {
+                        console.log(error);
+                    }
+                }
+                if (flag) {
+                    jQuery('#m-1710272631575').attr('data-name', 'Right click on the module, then choose Edit Html / Liquid option to start writing your custom code.');
+                }
+            }
+
+        }); 
+    jQuery(function() {
+    try {
+var $module = jQuery('#m-1710272631471').children('.module');   
+var navspeed = $module.data('navspeed'),
+    autoplaytimeout = $module.data('autoplaytimeout'),
+    autoplayhoverpause = $module.data('autoplayhoverpause'),
+    navlg = $module.data('navlg'),
+    navmd = $module.data('navmd'),
+    navsm = $module.data('navsm'),
+    navxs = $module.data('navxs'),
+    collg = $module.data('collg'),
+    colmd = $module.data('colmd'),
+    colsm = $module.data('colsm'),
+    colxs = $module.data('colxs'),
+    dotslg = $module.data('dotslg'),
+    dotsmd = $module.data('dotsmd'),
+    dotssm = $module.data('dotssm'),
+    dotsxs = $module.data('dotsxs'),
+    marginlg = parseInt($module.data('marginlg')),
+    marginmd = parseInt($module.data('marginmd')),
+    marginsm = parseInt($module.data('marginsm')),
+    marginxs = parseInt($module.data('marginxs'));
+    
+var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+if(mode == 'production') {
+    var autoplay = $module.data('autoplay'), 
+loop = $module.data('loop');
+} else {
+    var autoplay = 0, 
+loop = 0;
+}
+    
+$module.owlCarousel({
+    mouseDrag: false,
+    autoplayHoverPause: autoplayhoverpause,
+    autoplay: autoplay,
+    autoplayTimeout: autoplaytimeout,
+    loop: loop,
+    navSpeed: navspeed,
+    autoWidth: !1,
+    responsiveClass:true,
+    responsive:{
+0:{
+    items:colxs,
+    nav: navxs,
+    dots:dotsxs,
+    margin: marginxs,
+    slideBy: 2
+},
+768:{
+    items:colsm,
+    nav: navsm,
+    dots:dotssm,
+    margin: marginsm,
+    slideBy: 2
+},
+992:{
+    items:colmd,
+    nav: navmd,
+    dots:dotsmd,
+    margin: marginmd,
+    slideBy: 5
+},
+1200:{
+    items:collg,
+    nav: navlg,
+    dots:dotslg,
+    margin: marginlg,
+    slideBy: 5
+}
+    }
+}); 
+    } catch(err) {}
+
+});
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631587').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631587-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631587-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631587-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631486').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631486-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631486-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631486-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631469').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631469-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631469-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631469-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631529').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631529-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631529-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631529-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631530').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631530-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631530-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631530-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631498').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631498-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631498-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631498-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631521').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631521-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631521-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631521-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631494').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631494-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631494-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631494-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631504').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631504-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631504-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631504-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631564').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631564-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631564-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631564-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631522').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631522-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631522-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631522-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631417').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631417-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631417-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631417-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631433').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631433-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631433-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631433-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631461').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631461-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631461-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631461-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631443').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631443-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631443-1').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1710272631443-2').children('.module');
+        $module.gfV3ProductPrice();
+    });
+  
+    
+    
+    (function( jQuery ){
+  var $module = jQuery('#m-1710272631577').children('.module');
+  var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+  if (mode == 'production') {
+    jQuery(window).ready(function() {
+      $module.gfVideoBg();
+    })
+  } else {
+    $module.gfVideoBg();
+  }
+})( window.GemQuery || jQuery );
+  (function(jQuery) {
+    var $module = jQuery('#m-1710272631502').children('.module');
+    $module.find('.video-popup').magnificPopup({
+        type: 'iframe',
+        iframe: {
+            patterns: {
+                youtube: {
+                    index: 'youtube.com/',
+                    id: function(url) {
+                        var id;
+                        if (url.indexOf('youtu.be/') != -1) {
+                            id = url.split('youtu.be/');
+                        } else {
+                            id = url.split(/watch\?v=/);
+                        }
+                        if (id && id[1] != undefined) {
+                            id = id[1].split(/&/)[0];
+                        }
+                        return id;
+                    },
+                    src: '//www.youtube.com/embed/%id%?rel=0'
+                },
+                youtu: {
+                    index: 'youtu.be/',
+                    id: function(url) {
+                        var id;
+                        if (url.indexOf('youtu.be/') != -1) {
+                            id = url.split('youtu.be/');
+                        } else {
+                            id = url.split(/watch\?v=/);
+                        }
+                        if (id && id[1] != undefined) {
+                            id = id[1].split(/&/)[0];
+                        }
+                        return id;
+                    },
+                    src: '//www.youtube.com/embed/%id%?rel=0'
+                },
+                vimeo: {
+                    index: 'vimeo.com/',
+                    id: function(url) {
+                        var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
+                        if ( !m || !m[5] ) return null;
+                        return m[5];
+                    },
+                    src: '//player.vimeo.com/video/%id%?autoplay=1'
+                }
+            }
+        }
+    });
+})(window.GemQuery || jQuery);
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
+    
+  
+    
+  
+    
+  
+    
+  
+    
