@@ -59,7 +59,7 @@
           const debugMessages = new Map();
           // If the hostname matches a listed myshopify domain, redirect to the custom domain
           const hostnamePairStr = "{{ settings.myshopify_pairs | newline_to_br | strip_newlines | replace: ' ', '' }}";
-          const hostnameMatch = false
+          let hostnameMatch = false
           if (hostnamePairStr) {
             const hostnamePairs = hostnamePairStr.split('<br/>');
             const hostnameMap = new Map(hostnamePairs.map(hostnamePair => hostnamePair.split('>')))
