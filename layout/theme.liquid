@@ -179,6 +179,8 @@
 <!--Gem_Page_Header_Script-->
 {% render 'gem-app-header-scripts' %}
 <!--End_Gem_Page_Header_Script-->
+
+  {% render 'shogun-head' %}
 </head>
   <body>
     {%- if should_redirect -%}
@@ -229,6 +231,7 @@
     {% render 'gem-app-footer-scripts', GEM_FOOTER_SCRIPT: GEM_FOOTER_SCRIPT %}
   {% endif %}
 <!--End_Gem_Page_Footer_Script-->
+
 
 
 
