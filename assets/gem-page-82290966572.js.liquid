@@ -1,0 +1,1180 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+
+    
+    
+      
+    
+        jQuery(function() {
+    var $module = jQuery('#m-1648761884308').children('.module');
+    $module.find('.video-popup').magnificPopup({
+        type: 'iframe',
+        iframe: {
+            patterns: {
+                youtube: {
+                    index: 'youtube.com/',
+                    id: function(url) {
+                        var id;
+                        if (url.indexOf('youtu.be/') != -1) {
+                            id = url.split('youtu.be/');
+                        } else {
+                            id = url.split(/watch\?v=/);
+                        }
+                        if (id && id[1] != undefined) {
+                            id = id[1].split(/&/)[0];
+                        }
+                        return id;
+                    },
+                    src: '//www.youtube.com/embed/%id%?autoplay=1'
+                },
+                youtu: {
+                    index: 'youtu.be/',
+                    id: function(url) {
+                        var id;
+                        if (url.indexOf('youtu.be/') != -1) {
+                            id = url.split('youtu.be/');
+                        } else {
+                            id = url.split(/watch\?v=/);
+                        }
+                        if (id && id[1] != undefined) {
+                            id = id[1].split(/&/)[0];
+                        }
+                        return id;
+                    },
+                    src: '//www.youtube.com/embed/%id%?autoplay=1'
+                },
+                vimeo: {
+                    index: 'vimeo.com/',
+                    id: function(url) {
+                        var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
+                        if ( !m || !m[5] ) return null;
+                        return m[5];
+                    },
+                    src: '//player.vimeo.com/video/%id%?autoplay=1'
+                }
+            }
+        }
+    });
+});
+    
+    jQuery(function() {
+    try {
+var $module = jQuery('#m-1648761884264').children('.module');   
+var navspeed = $module.data('navspeed'),
+    autoplaytimeout = $module.data('autoplaytimeout'),
+    autoplayhoverpause = $module.data('autoplayhoverpause'),
+    navlg = $module.data('navlg'),
+    navmd = $module.data('navmd'),
+    navsm = $module.data('navsm'),
+    navxs = $module.data('navxs'),
+    collg = $module.data('collg'),
+    colmd = $module.data('colmd'),
+    colsm = $module.data('colsm'),
+    colxs = $module.data('colxs'),
+    dotslg = $module.data('dotslg'),
+    dotsmd = $module.data('dotsmd'),
+    dotssm = $module.data('dotssm'),
+    dotsxs = $module.data('dotsxs'),
+    marginlg = parseInt($module.data('marginlg')),
+    marginmd = parseInt($module.data('marginmd')),
+    marginsm = parseInt($module.data('marginsm')),
+    marginxs = parseInt($module.data('marginxs'));
+    
+var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+if(mode == 'production') {
+    var autoplay = $module.data('autoplay'), 
+loop = $module.data('loop');
+} else {
+    var autoplay = 0, 
+loop = 0;
+}
+    
+$module.owlCarousel({
+    mouseDrag: false,
+    autoplayHoverPause: autoplayhoverpause,
+    autoplay: autoplay,
+    autoplayTimeout: autoplaytimeout,
+    loop: loop,
+    navSpeed: navspeed,
+    autoWidth: !1,
+    responsiveClass:true,
+    responsive:{
+0:{
+    items:colxs,
+    nav: navxs,
+    dots:dotsxs,
+    margin: marginxs,
+    slideBy: 3
+},
+768:{
+    items:colsm,
+    nav: navsm,
+    dots:dotssm,
+    margin: marginsm,
+    slideBy: 3
+},
+992:{
+    items:colmd,
+    nav: navmd,
+    dots:dotsmd,
+    margin: marginmd,
+    slideBy: 5
+},
+1200:{
+    items:collg,
+    nav: navlg,
+    dots:dotslg,
+    margin: marginlg,
+    slideBy: 5
+}
+    }
+}); 
+    } catch(err) {}
+
+});
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884201').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+          jQuery(function() {
+    var $module = jQuery('#m-1648761884236').children('.module');
+    var effect = $module.attr('data-effect');
+    $module.gfV3ProductImage({
+        'effect': effect
+    })
+});
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1648761884199').children('.module');
+});
+      
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884201-2').children('.module');
+            $module.gfV3ProductPrice();
+        }); 
+    
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884278').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+          jQuery(function() {
+    var $module = jQuery('#m-1648761884294').children('.module');
+    var effect = $module.attr('data-effect');
+    $module.gfV3ProductImage({
+        'effect': effect
+    })
+});
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1648761884227').children('.module');
+});
+      
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884278-2').children('.module');
+            $module.gfV3ProductPrice();
+        }); 
+    
+    jQuery(function() {
+  try {
+    var $module = jQuery('#m-1648761884272').children('.module');   
+    var navspeed = $module.data('navspeed'),
+      autoplaytimeout = $module.data('autoplaytimeout'),
+      autoplayhoverpause = $module.data('autoplayhoverpause'),
+      navlg = $module.data('navlg'),
+      navmd = $module.data('navmd'),
+      navsm = $module.data('navsm'),
+      navxs = $module.data('navxs'),
+      collg = $module.data('collg'),
+      colmd = $module.data('colmd'),
+      colsm = $module.data('colsm'),
+      colxs = $module.data('colxs'),
+      dotslg = $module.data('dotslg'),
+      dotsmd = $module.data('dotsmd'),
+      dotssm = $module.data('dotssm'),
+      dotsxs = $module.data('dotsxs'),
+      marginlg = parseInt($module.data('marginlg')),
+      marginmd = parseInt($module.data('marginmd')),
+      marginsm = parseInt($module.data('marginsm')),
+      marginxs = parseInt($module.data('marginxs'));
+
+    var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    if(mode == 'production') {
+      var autoplay = $module.data('autoplay'), 
+          loop = $module.data('loop');
+    } else {
+      var autoplay = 0, 
+          loop = 0;
+    }
+
+    var initCarousel = function() {
+      $module.owlCarousel({
+        mouseDrag: false,
+        autoplayHoverPause: autoplayhoverpause,
+        autoplay: autoplay,
+        autoplayTimeout: autoplaytimeout,
+        loop: loop,
+        navSpeed: navspeed,
+        autoWidth: !1,
+        responsiveClass:true,
+        responsive:{
+          0:{
+              items:colxs,
+              nav: navxs,
+              dots:dotsxs,
+              margin: marginxs,
+              slideBy: 3
+          },
+          768:{
+              items:colsm,
+              nav: navsm,
+              dots:dotssm,
+              margin: marginsm,
+              slideBy: 3
+          },
+          992:{
+              items:colmd,
+              nav: navmd,
+              dots:dotsmd,
+              margin: marginmd,
+              slideBy: 3
+          },
+          1200:{
+              items:collg,
+              nav: navlg,
+              dots:dotslg,
+              margin: marginlg,
+              slideBy: 3
+          }
+        }
+      });
+    }
+    
+    // Fix nested carousel bug	
+    if ($module.parent().parent().closest('.module-wrap[data-label="Carousel"]').length > 0) {	
+        setTimeout(function() {	
+            initCarousel();	
+        }, 300)	
+    } else {	
+        initCarousel();	
+    }
+  } catch(err) {}
+});jQuery(function() {
+    try {
+var $module = jQuery('#m-1648761884269').children('.module');   
+var navspeed = $module.data('navspeed'),
+    autoplaytimeout = $module.data('autoplaytimeout'),
+    autoplayhoverpause = $module.data('autoplayhoverpause'),
+    navlg = $module.data('navlg'),
+    navmd = $module.data('navmd'),
+    navsm = $module.data('navsm'),
+    navxs = $module.data('navxs'),
+    collg = $module.data('collg'),
+    colmd = $module.data('colmd'),
+    colsm = $module.data('colsm'),
+    colxs = $module.data('colxs'),
+    dotslg = $module.data('dotslg'),
+    dotsmd = $module.data('dotsmd'),
+    dotssm = $module.data('dotssm'),
+    dotsxs = $module.data('dotsxs'),
+    marginlg = parseInt($module.data('marginlg')),
+    marginmd = parseInt($module.data('marginmd')),
+    marginsm = parseInt($module.data('marginsm')),
+    marginxs = parseInt($module.data('marginxs'));
+    
+var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+if(mode == 'production') {
+    var autoplay = $module.data('autoplay'), 
+loop = $module.data('loop');
+} else {
+    var autoplay = 0, 
+loop = 0;
+}
+    
+$module.owlCarousel({
+    mouseDrag: false,
+    autoplayHoverPause: autoplayhoverpause,
+    autoplay: autoplay,
+    autoplayTimeout: autoplaytimeout,
+    loop: loop,
+    navSpeed: navspeed,
+    autoWidth: !1,
+    responsiveClass:true,
+    responsive:{
+0:{
+    items:colxs,
+    nav: navxs,
+    dots:dotsxs,
+    margin: marginxs,
+    slideBy: 3
+},
+768:{
+    items:colsm,
+    nav: navsm,
+    dots:dotssm,
+    margin: marginsm,
+    slideBy: 3
+},
+992:{
+    items:colmd,
+    nav: navmd,
+    dots:dotsmd,
+    margin: marginmd,
+    slideBy: 3
+},
+1200:{
+    items:collg,
+    nav: navlg,
+    dots:dotslg,
+    margin: marginlg,
+    slideBy: 3
+}
+    }
+}); 
+    } catch(err) {}
+
+});
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884292').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884219').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884250').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884226').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+    
+        jQuery(function() {
+    var $module = jQuery('#m-1648761884302').children('.module');
+    $module.find('.video-popup').magnificPopup({
+        type: 'iframe',
+        iframe: {
+            patterns: {
+                youtube: {
+                    index: 'youtube.com/',
+                    id: function(url) {
+                        var id;
+                        if (url.indexOf('youtu.be/') != -1) {
+                            id = url.split('youtu.be/');
+                        } else {
+                            id = url.split(/watch\?v=/);
+                        }
+                        if (id && id[1] != undefined) {
+                            id = id[1].split(/&/)[0];
+                        }
+                        return id;
+                    },
+                    src: '//www.youtube.com/embed/%id%?autoplay=1'
+                },
+                youtu: {
+                    index: 'youtu.be/',
+                    id: function(url) {
+                        var id;
+                        if (url.indexOf('youtu.be/') != -1) {
+                            id = url.split('youtu.be/');
+                        } else {
+                            id = url.split(/watch\?v=/);
+                        }
+                        if (id && id[1] != undefined) {
+                            id = id[1].split(/&/)[0];
+                        }
+                        return id;
+                    },
+                    src: '//www.youtube.com/embed/%id%?autoplay=1'
+                },
+                vimeo: {
+                    index: 'vimeo.com/',
+                    id: function(url) {
+                        var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
+                        if ( !m || !m[5] ) return null;
+                        return m[5];
+                    },
+                    src: '//player.vimeo.com/video/%id%?autoplay=1'
+                }
+            }
+        }
+    });
+});
+    
+    jQuery(function() {
+    try {
+var $module = jQuery('#m-1648761884210').children('.module');   
+var navspeed = $module.data('navspeed'),
+    autoplaytimeout = $module.data('autoplaytimeout'),
+    autoplayhoverpause = $module.data('autoplayhoverpause'),
+    navlg = $module.data('navlg'),
+    navmd = $module.data('navmd'),
+    navsm = $module.data('navsm'),
+    navxs = $module.data('navxs'),
+    collg = $module.data('collg'),
+    colmd = $module.data('colmd'),
+    colsm = $module.data('colsm'),
+    colxs = $module.data('colxs'),
+    dotslg = $module.data('dotslg'),
+    dotsmd = $module.data('dotsmd'),
+    dotssm = $module.data('dotssm'),
+    dotsxs = $module.data('dotsxs'),
+    marginlg = parseInt($module.data('marginlg')),
+    marginmd = parseInt($module.data('marginmd')),
+    marginsm = parseInt($module.data('marginsm')),
+    marginxs = parseInt($module.data('marginxs'));
+    
+var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+if(mode == 'production') {
+    var autoplay = $module.data('autoplay'), 
+loop = $module.data('loop');
+} else {
+    var autoplay = 0, 
+loop = 0;
+}
+    
+$module.owlCarousel({
+    mouseDrag: false,
+    autoplayHoverPause: autoplayhoverpause,
+    autoplay: autoplay,
+    autoplayTimeout: autoplaytimeout,
+    loop: loop,
+    navSpeed: navspeed,
+    autoWidth: !1,
+    responsiveClass:true,
+    responsive:{
+0:{
+    items:colxs,
+    nav: navxs,
+    dots:dotsxs,
+    margin: marginxs,
+    slideBy: 3
+},
+768:{
+    items:colsm,
+    nav: navsm,
+    dots:dotssm,
+    margin: marginsm,
+    slideBy: 3
+},
+992:{
+    items:colmd,
+    nav: navmd,
+    dots:dotsmd,
+    margin: marginmd,
+    slideBy: 5
+},
+1200:{
+    items:collg,
+    nav: navlg,
+    dots:dotslg,
+    margin: marginlg,
+    slideBy: 5
+}
+    }
+}); 
+    } catch(err) {}
+
+});
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884249').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+          jQuery(function() {
+    var $module = jQuery('#m-1648761884333').children('.module');
+    var effect = $module.attr('data-effect');
+    $module.gfV3ProductImage({
+        'effect': effect
+    })
+});
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1648761884338').children('.module');
+});
+      
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884249-2').children('.module');
+            $module.gfV3ProductPrice();
+        }); 
+    
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1675108397017').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+          jQuery(function() {
+    var $module = jQuery('#m-1675108396964').children('.module');
+    var effect = $module.attr('data-effect');
+    $module.gfV3ProductImage({
+        'effect': effect
+    })
+});
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1675108396962').children('.module');
+});
+      
+        jQuery(function() {
+            var $module = jQuery('#m-1675108397017-2').children('.module');
+            $module.gfV3ProductPrice();
+        }); 
+    
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1675108365875').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+          jQuery(function() {
+    var $module = jQuery('#m-1675108365884').children('.module');
+    var effect = $module.attr('data-effect');
+    $module.gfV3ProductImage({
+        'effect': effect
+    })
+});
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1675108365976').children('.module');
+});
+      
+        jQuery(function() {
+            var $module = jQuery('#m-1675108365875-2').children('.module');
+            $module.gfV3ProductPrice();
+        }); 
+    
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884349').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+          jQuery(function() {
+    var $module = jQuery('#m-1648761884258').children('.module');
+    var effect = $module.attr('data-effect');
+    $module.gfV3ProductImage({
+        'effect': effect
+    })
+});
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1648761884218').children('.module');
+});
+      
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884349-2').children('.module');
+            $module.gfV3ProductPrice();
+        }); 
+    
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884331').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+          jQuery(function() {
+    var $module = jQuery('#m-1648761884352').children('.module');
+    var effect = $module.attr('data-effect');
+    $module.gfV3ProductImage({
+        'effect': effect
+    })
+});
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1648761884248').children('.module');
+});
+      
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884331-2').children('.module');
+            $module.gfV3ProductPrice();
+        }); 
+    
+    jQuery(function() {
+  try {
+    var $module = jQuery('#m-1648761884298').children('.module');   
+    var navspeed = $module.data('navspeed'),
+      autoplaytimeout = $module.data('autoplaytimeout'),
+      autoplayhoverpause = $module.data('autoplayhoverpause'),
+      navlg = $module.data('navlg'),
+      navmd = $module.data('navmd'),
+      navsm = $module.data('navsm'),
+      navxs = $module.data('navxs'),
+      collg = $module.data('collg'),
+      colmd = $module.data('colmd'),
+      colsm = $module.data('colsm'),
+      colxs = $module.data('colxs'),
+      dotslg = $module.data('dotslg'),
+      dotsmd = $module.data('dotsmd'),
+      dotssm = $module.data('dotssm'),
+      dotsxs = $module.data('dotsxs'),
+      marginlg = parseInt($module.data('marginlg')),
+      marginmd = parseInt($module.data('marginmd')),
+      marginsm = parseInt($module.data('marginsm')),
+      marginxs = parseInt($module.data('marginxs'));
+
+    var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    if(mode == 'production') {
+      var autoplay = $module.data('autoplay'), 
+          loop = $module.data('loop');
+    } else {
+      var autoplay = 0, 
+          loop = 0;
+    }
+
+    var initCarousel = function() {
+      $module.owlCarousel({
+        mouseDrag: false,
+        autoplayHoverPause: autoplayhoverpause,
+        autoplay: autoplay,
+        autoplayTimeout: autoplaytimeout,
+        loop: loop,
+        navSpeed: navspeed,
+        autoWidth: !1,
+        responsiveClass:true,
+        responsive:{
+          0:{
+              items:colxs,
+              nav: navxs,
+              dots:dotsxs,
+              margin: marginxs,
+              slideBy: 3
+          },
+          768:{
+              items:colsm,
+              nav: navsm,
+              dots:dotssm,
+              margin: marginsm,
+              slideBy: 3
+          },
+          992:{
+              items:colmd,
+              nav: navmd,
+              dots:dotsmd,
+              margin: marginmd,
+              slideBy: 3
+          },
+          1200:{
+              items:collg,
+              nav: navlg,
+              dots:dotslg,
+              margin: marginlg,
+              slideBy: 3
+          }
+        }
+      });
+    }
+    
+    // Fix nested carousel bug	
+    if ($module.parent().parent().closest('.module-wrap[data-label="Carousel"]').length > 0) {	
+        setTimeout(function() {	
+            initCarousel();	
+        }, 300)	
+    } else {	
+        initCarousel();	
+    }
+  } catch(err) {}
+});jQuery(function() {
+    try {
+var $module = jQuery('#m-1648761884212').children('.module');   
+var navspeed = $module.data('navspeed'),
+    autoplaytimeout = $module.data('autoplaytimeout'),
+    autoplayhoverpause = $module.data('autoplayhoverpause'),
+    navlg = $module.data('navlg'),
+    navmd = $module.data('navmd'),
+    navsm = $module.data('navsm'),
+    navxs = $module.data('navxs'),
+    collg = $module.data('collg'),
+    colmd = $module.data('colmd'),
+    colsm = $module.data('colsm'),
+    colxs = $module.data('colxs'),
+    dotslg = $module.data('dotslg'),
+    dotsmd = $module.data('dotsmd'),
+    dotssm = $module.data('dotssm'),
+    dotsxs = $module.data('dotsxs'),
+    marginlg = parseInt($module.data('marginlg')),
+    marginmd = parseInt($module.data('marginmd')),
+    marginsm = parseInt($module.data('marginsm')),
+    marginxs = parseInt($module.data('marginxs'));
+    
+var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+if(mode == 'production') {
+    var autoplay = $module.data('autoplay'), 
+loop = $module.data('loop');
+} else {
+    var autoplay = 0, 
+loop = 0;
+}
+    
+$module.owlCarousel({
+    mouseDrag: false,
+    autoplayHoverPause: autoplayhoverpause,
+    autoplay: autoplay,
+    autoplayTimeout: autoplaytimeout,
+    loop: loop,
+    navSpeed: navspeed,
+    autoWidth: !1,
+    responsiveClass:true,
+    responsive:{
+0:{
+    items:colxs,
+    nav: navxs,
+    dots:dotsxs,
+    margin: marginxs,
+    slideBy: 3
+},
+768:{
+    items:colsm,
+    nav: navsm,
+    dots:dotssm,
+    margin: marginsm,
+    slideBy: 3
+},
+992:{
+    items:colmd,
+    nav: navmd,
+    dots:dotsmd,
+    margin: marginmd,
+    slideBy: 3
+},
+1200:{
+    items:collg,
+    nav: navlg,
+    dots:dotslg,
+    margin: marginlg,
+    slideBy: 3
+}
+    }
+}); 
+    } catch(err) {}
+
+});
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884202').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884196').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884245').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884284').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+      
+    
+    
+        jQuery(function() {
+    var $module = jQuery('#m-1648761884263').children('.module');
+    $module.find('.video-popup').magnificPopup({
+        type: 'iframe',
+        iframe: {
+            patterns: {
+                youtube: {
+                    index: 'youtube.com/',
+                    id: function(url) {
+                        var id;
+                        if (url.indexOf('youtu.be/') != -1) {
+                            id = url.split('youtu.be/');
+                        } else {
+                            id = url.split(/watch\?v=/);
+                        }
+                        if (id && id[1] != undefined) {
+                            id = id[1].split(/&/)[0];
+                        }
+                        return id;
+                    },
+                    src: '//www.youtube.com/embed/%id%?autoplay=1'
+                },
+                youtu: {
+                    index: 'youtu.be/',
+                    id: function(url) {
+                        var id;
+                        if (url.indexOf('youtu.be/') != -1) {
+                            id = url.split('youtu.be/');
+                        } else {
+                            id = url.split(/watch\?v=/);
+                        }
+                        if (id && id[1] != undefined) {
+                            id = id[1].split(/&/)[0];
+                        }
+                        return id;
+                    },
+                    src: '//www.youtube.com/embed/%id%?autoplay=1'
+                },
+                vimeo: {
+                    index: 'vimeo.com/',
+                    id: function(url) {
+                        var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
+                        if ( !m || !m[5] ) return null;
+                        return m[5];
+                    },
+                    src: '//player.vimeo.com/video/%id%?autoplay=1'
+                }
+            }
+        }
+    });
+});
+    
+    jQuery(function() {
+    try {
+var $module = jQuery('#m-1648761884228').children('.module');   
+var navspeed = $module.data('navspeed'),
+    autoplaytimeout = $module.data('autoplaytimeout'),
+    autoplayhoverpause = $module.data('autoplayhoverpause'),
+    navlg = $module.data('navlg'),
+    navmd = $module.data('navmd'),
+    navsm = $module.data('navsm'),
+    navxs = $module.data('navxs'),
+    collg = $module.data('collg'),
+    colmd = $module.data('colmd'),
+    colsm = $module.data('colsm'),
+    colxs = $module.data('colxs'),
+    dotslg = $module.data('dotslg'),
+    dotsmd = $module.data('dotsmd'),
+    dotssm = $module.data('dotssm'),
+    dotsxs = $module.data('dotsxs'),
+    marginlg = parseInt($module.data('marginlg')),
+    marginmd = parseInt($module.data('marginmd')),
+    marginsm = parseInt($module.data('marginsm')),
+    marginxs = parseInt($module.data('marginxs'));
+    
+var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+if(mode == 'production') {
+    var autoplay = $module.data('autoplay'), 
+loop = $module.data('loop');
+} else {
+    var autoplay = 0, 
+loop = 0;
+}
+    
+$module.owlCarousel({
+    mouseDrag: false,
+    autoplayHoverPause: autoplayhoverpause,
+    autoplay: autoplay,
+    autoplayTimeout: autoplaytimeout,
+    loop: loop,
+    navSpeed: navspeed,
+    autoWidth: !1,
+    responsiveClass:true,
+    responsive:{
+0:{
+    items:colxs,
+    nav: navxs,
+    dots:dotsxs,
+    margin: marginxs,
+    slideBy: 3
+},
+768:{
+    items:colsm,
+    nav: navsm,
+    dots:dotssm,
+    margin: marginsm,
+    slideBy: 3
+},
+992:{
+    items:colmd,
+    nav: navmd,
+    dots:dotsmd,
+    margin: marginmd,
+    slideBy: 5
+},
+1200:{
+    items:collg,
+    nav: navlg,
+    dots:dotslg,
+    margin: marginlg,
+    slideBy: 5
+}
+    }
+}); 
+    } catch(err) {}
+
+});
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884317').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+          jQuery(function() {
+    var $module = jQuery('#m-1648761884217').children('.module');
+    var effect = $module.attr('data-effect');
+    $module.gfV3ProductImage({
+        'effect': effect
+    })
+});
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1648761884316').children('.module');
+});
+      
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884317-2').children('.module');
+            $module.gfV3ProductPrice();
+        }); 
+    
+    
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884193').children('.module');
+            $module.gfV3Product();
+        }); 
+    
+          jQuery(function() {
+    var $module = jQuery('#m-1648761884267').children('.module');
+    var effect = $module.attr('data-effect');
+    $module.gfV3ProductImage({
+        'effect': effect
+    })
+});
+      
+          jQuery(function() {
+  var $module = jQuery('#m-1648761884268').children('.module');
+});
+      
+        jQuery(function() {
+            var $module = jQuery('#m-1648761884193-2').children('.module');
+            $module.gfV3ProductPrice();
+        }); 
+    
+    jQuery(function() {
+  try {
+    var $module = jQuery('#m-1648761884229').children('.module');   
+    var navspeed = $module.data('navspeed'),
+      autoplaytimeout = $module.data('autoplaytimeout'),
+      autoplayhoverpause = $module.data('autoplayhoverpause'),
+      navlg = $module.data('navlg'),
+      navmd = $module.data('navmd'),
+      navsm = $module.data('navsm'),
+      navxs = $module.data('navxs'),
+      collg = $module.data('collg'),
+      colmd = $module.data('colmd'),
+      colsm = $module.data('colsm'),
+      colxs = $module.data('colxs'),
+      dotslg = $module.data('dotslg'),
+      dotsmd = $module.data('dotsmd'),
+      dotssm = $module.data('dotssm'),
+      dotsxs = $module.data('dotsxs'),
+      marginlg = parseInt($module.data('marginlg')),
+      marginmd = parseInt($module.data('marginmd')),
+      marginsm = parseInt($module.data('marginsm')),
+      marginxs = parseInt($module.data('marginxs'));
+
+    var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    if(mode == 'production') {
+      var autoplay = $module.data('autoplay'), 
+          loop = $module.data('loop');
+    } else {
+      var autoplay = 0, 
+          loop = 0;
+    }
+
+    var initCarousel = function() {
+      $module.owlCarousel({
+        mouseDrag: false,
+        autoplayHoverPause: autoplayhoverpause,
+        autoplay: autoplay,
+        autoplayTimeout: autoplaytimeout,
+        loop: loop,
+        navSpeed: navspeed,
+        autoWidth: !1,
+        responsiveClass:true,
+        responsive:{
+          0:{
+              items:colxs,
+              nav: navxs,
+              dots:dotsxs,
+              margin: marginxs,
+              slideBy: 3
+          },
+          768:{
+              items:colsm,
+              nav: navsm,
+              dots:dotssm,
+              margin: marginsm,
+              slideBy: 3
+          },
+          992:{
+              items:colmd,
+              nav: navmd,
+              dots:dotsmd,
+              margin: marginmd,
+              slideBy: 3
+          },
+          1200:{
+              items:collg,
+              nav: navlg,
+              dots:dotslg,
+              margin: marginlg,
+              slideBy: 3
+          }
+        }
+      });
+    }
+    
+    // Fix nested carousel bug	
+    if ($module.parent().parent().closest('.module-wrap[data-label="Carousel"]').length > 0) {	
+        setTimeout(function() {	
+            initCarousel();	
+        }, 300)	
+    } else {	
+        initCarousel();	
+    }
+  } catch(err) {}
+});jQuery(function() {
+    try {
+var $module = jQuery('#m-1648761884240').children('.module');   
+var navspeed = $module.data('navspeed'),
+    autoplaytimeout = $module.data('autoplaytimeout'),
+    autoplayhoverpause = $module.data('autoplayhoverpause'),
+    navlg = $module.data('navlg'),
+    navmd = $module.data('navmd'),
+    navsm = $module.data('navsm'),
+    navxs = $module.data('navxs'),
+    collg = $module.data('collg'),
+    colmd = $module.data('colmd'),
+    colsm = $module.data('colsm'),
+    colxs = $module.data('colxs'),
+    dotslg = $module.data('dotslg'),
+    dotsmd = $module.data('dotsmd'),
+    dotssm = $module.data('dotssm'),
+    dotsxs = $module.data('dotsxs'),
+    marginlg = parseInt($module.data('marginlg')),
+    marginmd = parseInt($module.data('marginmd')),
+    marginsm = parseInt($module.data('marginsm')),
+    marginxs = parseInt($module.data('marginxs'));
+    
+var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+if(mode == 'production') {
+    var autoplay = $module.data('autoplay'), 
+loop = $module.data('loop');
+} else {
+    var autoplay = 0, 
+loop = 0;
+}
+    
+$module.owlCarousel({
+    mouseDrag: false,
+    autoplayHoverPause: autoplayhoverpause,
+    autoplay: autoplay,
+    autoplayTimeout: autoplaytimeout,
+    loop: loop,
+    navSpeed: navspeed,
+    autoWidth: !1,
+    responsiveClass:true,
+    responsive:{
+0:{
+    items:colxs,
+    nav: navxs,
+    dots:dotsxs,
+    margin: marginxs,
+    slideBy: 3
+},
+768:{
+    items:colsm,
+    nav: navsm,
+    dots:dotssm,
+    margin: marginsm,
+    slideBy: 3
+},
+992:{
+    items:colmd,
+    nav: navmd,
+    dots:dotsmd,
+    margin: marginmd,
+    slideBy: 3
+},
+1200:{
+    items:collg,
+    nav: navlg,
+    dots:dotslg,
+    margin: marginlg,
+    slideBy: 3
+}
+    }
+}); 
+    } catch(err) {}
+
+});
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884329').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884183').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884232').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884344').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+(function( jQuery ){
+  var $module = jQuery('#m-1648761884273').children('.module');
+  $module.gfV2HeroBanner({});
+  
+})( window.GemQuery || jQuery );
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
