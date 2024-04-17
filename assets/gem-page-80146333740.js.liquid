@@ -1,0 +1,133 @@
+{% comment %}
+	GEMPAGE BUILDER (https://apps.shopify.com/gempage)
+
+	You SHOULD NOT modify source code in this page because
+	It is automatically generated from GEMPAGE BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+
+        jQuery(function() {
+            var $module = jQuery('#m-1518818243676');
+
+            if($module.children('.module').attr('data-fullheight') == '1' ){
+                var wHeight = jQuery(window).height();
+                $module.css({
+                    'height': wHeight
+                });
+                jQuery(window).resize(function(){
+                    $module.css('height', jQuery(window).height());
+                });
+
+                $module.children('.module').addClass('full-height');
+            } else {
+                $module.css({
+                    'height': 'auto'
+                });
+                jQuery(window).resize(function(){
+                    $module.css('height', 'auto');
+                });
+
+                $module.children('.module').removeClass('full-height');
+            }
+
+            var image = $module.children('.module').data('image') || '';
+            var speed = parseFloat($module.children('.module').data('speed')) || 0.2;
+            if($module.data('gfparallax') != undefined) {
+                $module.removeData('gfparallax');
+            }
+            $module.gfParallax({
+                'image': image,
+                'speed': speed
+            });
+        }); 
+    
+    
+      
+    jQuery(function() {
+        var $module = jQuery('#m-1598371364159').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598371364159-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598371364096').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1598371364159-3').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function(data) {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1597348017234').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1597348017234-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1597348017268').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1597348017234-3').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function(data) {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1597348051697').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1597348051697-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1597348051773').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1597348051697-3').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function(data) {}});
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1579892877940').children('.module');
+        $module.gfV3Product();
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1579892877940-0').children('.module');
+        var effect = $module.attr('data-effect');
+        $module.gfV3ProductImage({
+            'effect': effect
+        })
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1579894480417').children('.module');
+    });
+  
+    jQuery(function() {
+        var $module = jQuery('#m-1579892877940-3').children('.module');
+        $module.gfV3ProductCartButton({ onItemAdded: function(data) {}});
+    });
+  
