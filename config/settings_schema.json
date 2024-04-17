@@ -24,7 +24,13 @@
         "type": "textarea",
         "id": "subdomain_pairs",
         "label": "Checkout Subdomain Pairs",
-        "info": "checkout subdomain:hydrogen subdomain (eg: eu-checkout > eu)"
+        "info": "checkout subdomain > hydrogen subdomain (eg: eu-checkout > eu)"
+      },
+      {
+        "type": "textarea",
+        "id": "myshopify_pairs",
+        "label": "MyShopify Subdomain Pairs",
+        "info": "myshopify hostname > live site hostname (eg: os-trtl.myshopify.com > www.turtlebeach.com)"
       },
       {
         "type": "checkbox",
